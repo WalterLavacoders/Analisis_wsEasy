@@ -6,9 +6,7 @@
 * Inicia configuracion de los controladores (select de tabla ```config_controller``` relacionada con ```config_ap```,```brinquedo_leitor```,```brinquedo```)
 * una vez que termina de cargar la lista de controladores parametrizados, cierra conexion a base de datos
 * inicia aplicacion, abriendo puerto correspondiente (el select actual a la base esta devolviendo 2 configuracion una en puerto ```3002``` y otra en puerto ```3003```)
-``` 
-en java existe la clase Thread, que ejecuta hilos dentro de un mismo programa. De esta manera inicia los distintos socket que necesita.
-```
+>En java existe la clase **Thread**, que ejecuta hilos dentro de un mismo programa. De esta manera inicia los distintos socket que necesita.
 * por cada conexion que recibe de los controladres crea un nuevo hilo de ejecucion en donde hay 3 Metodos principales.
     * **Metodo readMsg:**
         mapea los la cadena de hexadecimal a un formato { clave: valor }
